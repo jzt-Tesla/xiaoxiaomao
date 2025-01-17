@@ -1,0 +1,6 @@
+<view class="container {{isReady ? 'animate' : ''}}" style="--fill-color: {{hex}}" bindtap="onTap">
+  <view class="color-info">
+    <text class="color-code">{{code}}</text>
+    <text class="color-name">{{name}}</text>
+  </view>
+</view> 

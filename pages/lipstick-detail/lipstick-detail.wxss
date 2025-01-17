@@ -1,0 +1,199 @@
+page {
+  background: #fff;
+}
+
+.container {
+  min-height: 100vh;
+  background: #fff;
+  padding-bottom: 120rpx;
+}
+
+/* 头部品牌和色号信息 */
+.header {
+  padding: 40rpx;
+  text-align: center;
+}
+
+.brand {
+  font-size: 32rpx;
+  color: #333;
+  font-weight: 500;
+  margin-bottom: 16rpx;
+  display: block;
+}
+
+.name {
+  font-size: 36rpx;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 12rpx;
+  display: block;
+}
+
+.code {
+  font-size: 28rpx;
+  color: #666;
+  display: block;
+}
+
+/* 颜色展示区域 */
+.color-showcase {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40rpx 0;
+}
+
+.color-circle {
+  width: 240rpx;
+  height: 240rpx;
+  border-radius: 50%;
+  box-shadow: 0 8rpx 32rpx rgba(0, 0, 0, 0.1);
+  margin-bottom: 32rpx;
+  border: 8rpx solid #fff;
+}
+
+.price {
+  font-size: 40rpx;
+  color: #ff85a2;
+  font-weight: bold;
+}
+
+/* 详细信息区域 */
+.info-section {
+  padding: 40rpx;
+  border-top: 16rpx solid #f8f8f8;
+}
+
+.info-item {
+  margin-bottom: 32rpx;
+}
+
+.info-item:last-child {
+  margin-bottom: 0;
+}
+
+.label {
+  font-size: 28rpx;
+  color: #999;
+  margin-bottom: 12rpx;
+  display: block;
+}
+
+.value {
+  font-size: 30rpx;
+  color: #333;
+  line-height: 1.5;
+  display: block;
+}
+
+/* 相似色号区域 */
+.similar-colors {
+  padding: 40rpx;
+  border-top: 16rpx solid #f8f8f8;
+}
+
+.section-title {
+  font-size: 32rpx;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 32rpx;
+  display: block;
+}
+
+.similar-scroll {
+  white-space: nowrap;
+}
+
+.similar-list {
+  display: inline-flex;
+  padding: 10rpx 0;
+}
+
+.similar-item {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 40rpx;
+  width: 160rpx;
+}
+
+.similar-circle {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  box-shadow: 0 4rpx 16rpx rgba(0, 0, 0, 0.1);
+  margin-bottom: 16rpx;
+  border: 4rpx solid #fff;
+}
+
+.similar-info {
+  text-align: center;
+}
+
+.similar-brand {
+  font-size: 24rpx;
+  color: #666;
+  margin-bottom: 4rpx;
+  display: block;
+  white-space: normal;
+  width: 100%;
+}
+
+.similar-code {
+  font-size: 24rpx;
+  color: #999;
+  display: block;
+}
+
+/* 底部操作栏 */
+.bottom-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100rpx;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0 40rpx;
+  box-shadow: 0 -2rpx 10rpx rgba(0, 0, 0, 0.05);
+}
+
+.collect-btn, .share-btn {
+  flex: 1;
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40rpx;
+  margin: 0 10rpx;
+  font-size: 28rpx;
+}
+
+.collect-btn {
+  background: #f5f5f5;
+  color: #666;
+}
+
+.collect-btn.collected {
+  background: #fff0f3;
+  color: #ff85a2;
+}
+
+.share-btn {
+  background: #ff85a2;
+  color: #fff;
+  border: none;
+  line-height: 80rpx;
+}
+
+.share-btn::after {
+  display: none;
+}
+
+.collect-icon, .share-icon {
+  width: 36rpx;
+  height: 36rpx;
+  margin-right: 10rpx;
+} 

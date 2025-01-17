@@ -1,0 +1,122 @@
+/**index.wxss**/
+page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.scrollarea {
+  flex: 1;
+  overflow-y: hidden;
+}
+
+.container {
+  padding: 32rpx;
+  background: #fff6f8;
+  min-height: 100vh;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 48rpx;
+  padding: 32rpx 0;
+}
+
+.title {
+  font-size: 48rpx;
+  color: #ff85a2;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 16rpx;
+}
+
+.subtitle {
+  font-size: 28rpx;
+  color: #ff9fb5;
+  display: block;
+}
+
+.card-container {
+  padding: 24rpx;
+}
+
+.card {
+  background: #fff;
+  border-radius: 32rpx;
+  padding: 32rpx;
+  margin-bottom: 32rpx;
+  position: relative;
+  box-shadow: 0 8rpx 32rpx rgba(255, 133, 162, 0.1);
+  transition: all 0.3s ease;
+}
+
+.card:active {
+  transform: scale(0.98);
+}
+
+.card.lipstick {
+  border: 3rpx solid #ffb5c5;
+}
+
+.card.beauty {
+  border: 3rpx solid #b5c8ff;
+}
+
+.card.light {
+  border: 3rpx solid #ffe4b5;
+}
+
+.card-content {
+  display: flex;
+  align-items: center;
+}
+
+.card-icon {
+  font-size: 64rpx;
+  margin-right: 24rpx;
+}
+
+.card-text {
+  flex: 1;
+}
+
+.card-title {
+  font-size: 36rpx;
+  color: #333;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 8rpx;
+}
+
+.card-desc {
+  font-size: 28rpx;
+  color: #666;
+  display: block;
+}
+
+.card-bubble {
+  position: absolute;
+  right: -16rpx;
+  top: -16rpx;
+  background: #ff85a2;
+  padding: 12rpx 24rpx;
+  border-radius: 24rpx;
+  transform: rotate(15deg);
+}
+
+.bubble-text {
+  color: #fff;
+  font-size: 20rpx;
+  font-weight: 500;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 64rpx;
+  padding: 32rpx;
+}
+
+.footer-text {
+  font-size: 24rpx;
+  color: #ff9fb5;
+  font-style: italic;
+}

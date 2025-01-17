@@ -1,0 +1,39 @@
+<view class="color-picker-container">
+  <!-- 预设颜色圆形选择区 -->
+  <scroll-view 
+    class="preset-colors" 
+    scroll-x="true"
+    enhanced="true"
+    show-scrollbar="false"
+    scroll-with-animation="true"
+  >
+    <view class="color-circles">
+      <view class="color-circle-item" 
+        wx:for="{{presetColors}}" 
+        wx:key="index" 
+        bindtap="onPresetColorTap" 
+        data-color="{{item.color}}"
+      >
+        <view class="color-circle" style="background-color: {{item.color}}"></view>
+        <text class="color-name">{{item.name}}</text>
+      </view>
+    </view>
+  </scroll-view>
+
+  <!-- 渐变色滑动条 -->
+  <view class="gradient-slider">
+    <view class="gradient-bar">
+      <slider 
+        class="color-slider" 
+        min="0" 
+        max="360" 
+        value="{{hue}}" 
+        block-size="28"
+        activeColor="transparent"
+        backgroundColor="transparent"
+        bindchanging="onSliderChange"
+        bindchange="onSliderChange"
+      />
+    </view>
+  </view>
+</view> 

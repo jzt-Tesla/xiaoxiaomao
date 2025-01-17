@@ -1,0 +1,55 @@
+<!--index.wxml-->
+<scroll-view class="scrollarea" scroll-y type="list">
+  <view class="container">
+    <view class="header">
+      <text class="title">小小猫美妆</text>
+      <text class="subtitle">让美妆更简单有趣</text>
+    </view>
+
+    <view class="card-container">
+      <navigator url="/pages/lipstick/lipstick" class="card lipstick">
+        <view class="card-content">
+          <text class="card-icon">💄</text>
+          <view class="card-text">
+            <text class="card-title">口红色号</text>
+            <text class="card-desc">找到你的命定色号</text>
+          </view>
+        </view>
+        <view class="card-bubble">
+          <text class="bubble-text">点击查看</text>
+        </view>
+      </navigator>
+
+      <view class="card beauty" bindtap="navigateToBeauty">
+        <view class="card-content">
+          <text class="card-icon">✨</text>
+          <view class="card-text">
+            <text class="card-title">美妆查询</text>
+            <text class="card-desc">专业美妆小贴士</text>
+          </view>
+        </view>
+        <view class="card-bubble">
+          <text class="bubble-text">点击查询</text>
+        </view>
+      </view>
+
+      <view class="card light" bindtap="navigateToLight">
+        <view class="card-content">
+          <text class="card-icon">💡</text>
+          <view class="card-text">
+            <text class="card-title">补光灯</text>
+            <text class="card-desc">打造完美光线效果</text>
+          </view>
+        </view>
+        <view class="card-bubble">
+          <text class="bubble-text">点击使用</text>
+        </view>
+      </view>
+    </view>
+
+
+    <view class="footer">
+      <text class="footer-text">每天都要漂漂亮亮的~</text>
+    </view>
+  </view>
+</scroll-view>

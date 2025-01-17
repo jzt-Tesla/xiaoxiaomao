@@ -1,0 +1,8 @@
+<!--pages/beauty/beauty.wxml-->
+<view class="container">
+  <view class="back-button" bindtap="onBack">
+    <text class="back-icon">←</text>
+    <text class="back-text">返回</text>
+  </view>
+  <text class="title">美妆查询</text>
+</view>

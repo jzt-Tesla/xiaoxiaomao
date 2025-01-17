@@ -1,0 +1,59 @@
+.container {
+  min-height: 100vh;
+  background: #fff;
+  padding: 32rpx;
+}
+
+.light-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24rpx;
+  padding: 24rpx;
+}
+
+.light-item {
+  aspect-ratio: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 24rpx;
+  padding: 32rpx;
+  box-shadow: 0 4rpx 16rpx rgba(0, 0, 0, 0.05);
+}
+
+.light-icon {
+  font-size: 64rpx;
+  margin-bottom: 24rpx;
+}
+
+.light-name {
+  font-size: 28rpx;
+  color: #333;
+  font-weight: 500;
+}
+
+/* 不同类型的补光效果卡片样式 */
+.light-item.warm {
+  background: #FFF7E6;
+}
+
+.light-item.cold {
+  background: #E6F7FF;
+}
+
+.light-item.natural {
+  background: #F6FFED;
+}
+
+.light-item.sunset {
+  background: #FFF2E8;
+}
+
+.light-item.studio {
+  background: #F9F0FF;
+}
+
+.light-item.custom {
+  background: #FFF0F6;
+} 

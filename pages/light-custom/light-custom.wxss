@@ -1,0 +1,135 @@
+/***** 基础页面设置模块 *****/
+/* 设置页面基本属性，确保页面占满全屏 */
+page {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+
+/* 页面主容器，采用弹性布局使内容可滚动 */
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+}
+
+.header {
+  padding: 20rpx 32rpx;
+  text-align: center;
+  background: transparent;
+}
+
+.title {
+  font-size: 36rpx;
+  font-weight: 600;
+  color: #333;
+}
+
+/***** 相机预览模块 *****/
+.camera-section {
+  width: 100%;
+  height: 750rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-color);
+  transition: background-color 0.3s ease;
+}
+
+.camera-container {
+  width: 700rpx;
+  height: 700rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 8rpx solid #fff;
+  box-shadow: 0 8rpx 32rpx rgba(0, 0, 0, 0.15);
+}
+
+.camera {
+  width: 100%;
+  height: 100%;
+}
+
+/***** 控制面板模块 *****/
+.controls-section {
+  flex: 1;
+  padding: 32rpx 40rpx;
+  margin-top: 30rpx;
+}
+
+.color-picker-wrapper {
+  margin-bottom: 40rpx;
+}
+
+.slider-group {
+  margin-bottom: 48rpx;
+}
+
+.slider-item {
+  margin-bottom: 32rpx;
+}
+
+.slider-label {
+  font-size: 28rpx;
+  color: #666;
+  margin-bottom: 16rpx;
+  display: block;
+}
+
+.color-picker-section {
+  margin-bottom: 48rpx;
+}
+
+.confirm-button {
+  width: 100% !important;
+  height: 88rpx;
+  line-height: 88rpx;
+  background: linear-gradient(45deg, #ff85a2, #ff9fb5);
+  color: #fff;
+  font-size: 32rpx;
+  font-weight: bold;
+  border-radius: 44rpx;
+  text-align: center;
+  box-shadow: 0 8rpx 16rpx rgba(255, 133, 162, 0.25);
+  transition: all 0.3s ease;
+}
+
+.confirm-button:active {
+  transform: scale(0.98);
+  box-shadow: 0 4rpx 8rpx rgba(255, 133, 162, 0.15);
+}
+
+.preview-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.preview-controls {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40rpx;
+  margin-top: 40rpx;
+}
+
+.action-button {
+  width: 45% !important;
+  height: 88rpx;
+  line-height: 88rpx;
+  text-align: center;
+  border-radius: 44rpx;
+  font-size: 32rpx;
+  box-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.1);
+}
+
+.action-button.retake {
+  background: #fff;
+  color: #ff85a2;
+  border: 2rpx solid #ff85a2;
+}
+
+.action-button.save {
+  background: #ff85a2;
+  color: #fff;
+} 

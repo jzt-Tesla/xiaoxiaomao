@@ -1,0 +1,38 @@
+<!-- 自定义补光拍照页面 -->
+<!-- 页面主容器：背景色为当前选中的补光颜色 -->
+<view class="container" style="background: {{backgroundColor}};">
+  <view class="header">
+    <text class="title">自定义补光颜色</text>
+  </view>
+
+  <view class="camera-section">
+    <view class="camera-container">
+      <camera device-position="front" flash="off" class="camera"></camera>
+    </view>
+  </view>
+
+  <view class="controls-section">
+    <view class="color-picker-wrapper">
+      <color-picker 
+        bindchange="onColorChange" 
+        color="{{selectedColor}}" 
+      />
+    </view>
+
+    <view class="slider-group">
+      <view class="slider-item">
+        <text>屏幕亮度</text>
+        <slider 
+          value="{{screenBrightness}}" 
+          min="0" 
+          max="100" 
+          block-size="12"
+          activeColor="#ff85a2" 
+          backgroundColor="#f5f5f5" 
+          bindchange="onScreenBrightnessChange"
+        />
+      </view>
+      <button class="confirm-button" bindtap="onConfirm">确认颜色</button>
+    </view>
+  </view>
+</view> 

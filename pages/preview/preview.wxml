@@ -1,0 +1,16 @@
+<view class="container" style="background: {{color}}">
+  <view class="preview-section">
+    <image 
+      class="preview-image" 
+      src="{{tempImagePath}}" 
+      mode="aspectFit"
+      show-menu-by-longpress
+      binderror="handleImageError"
+    ></image>
+  </view>
+
+  <view class="controls-section">
+    <button class="action-button retake" bindtap="retake">重新拍摄</button>
+    <button class="action-button save" bindtap="savePhoto">保存照片</button>
+  </view>
+</view> 

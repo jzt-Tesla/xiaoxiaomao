@@ -1,0 +1,185 @@
+page {
+  background: #fff;
+}
+
+.container {
+  min-height: 100vh;
+  background: #fff;
+  padding-bottom: 32rpx;
+}
+
+/* 品牌选择区域 */
+.brand-section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  z-index: 100;
+  padding: 20rpx 0;
+  box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.05);
+}
+
+.brand-scroll {
+  white-space: nowrap;
+  padding: 0 20rpx;
+}
+
+.brand-item {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 40rpx;
+  padding: 16rpx;
+  border-radius: 16rpx;
+  transition: all 0.3s ease;
+}
+
+.brand-item.active {
+  background: rgba(255, 133, 162, 0.1);
+}
+
+.brand-logo {
+  width: 80rpx;
+  height: 80rpx;
+  margin-bottom: 8rpx;
+}
+
+.brand-name {
+  font-size: 24rpx;
+  color: #666;
+}
+
+/* 搜索和分类区域 */
+.filter-section {
+  position: fixed;
+  top: 140rpx;
+  left: 0;
+  right: 0;
+  background: #fff;
+  z-index: 99;
+  padding: 20rpx;
+  box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.05);
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background: #f5f5f5;
+  border-radius: 32rpx;
+  padding: 12rpx 24rpx;
+  margin-bottom: 20rpx;
+}
+
+.search-icon {
+  width: 32rpx;
+  height: 32rpx;
+  margin-right: 16rpx;
+}
+
+.search-input {
+  flex: 1;
+  font-size: 28rpx;
+  color: #333;
+}
+
+.search-placeholder {
+  color: #999;
+}
+
+.category-scroll {
+  white-space: nowrap;
+  margin: 0 -20rpx;
+  padding: 0 20rpx;
+}
+
+.category-list {
+  display: inline-flex;
+  padding: 10rpx 0;
+}
+
+.category-chip {
+  display: inline-block;
+  padding: 12rpx 24rpx;
+  background: #f5f5f5;
+  border-radius: 32rpx;
+  font-size: 24rpx;
+  color: #666;
+  margin-right: 16rpx;
+  transition: all 0.3s ease;
+}
+
+.category-chip.active {
+  background: #ff85a2;
+  color: #fff;
+}
+
+/* 颜色展示区域 */
+.color-display {
+  margin-top: 300rpx;
+  padding: 0 20rpx;
+}
+
+.waterfall {
+  column-count: 2;
+  column-gap: 20rpx;
+}
+
+.color-card {
+  break-inside: avoid;
+  background: #fff;
+  border-radius: 16rpx;
+  margin-bottom: 20rpx;
+  box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.color-card:active {
+  transform: scale(0.98);
+}
+
+.color-preview {
+  width: 100%;
+  height: 200rpx;
+  border-radius: 16rpx 16rpx 0 0;
+}
+
+.color-info {
+  padding: 16rpx;
+}
+
+.color-code {
+  font-size: 24rpx;
+  color: #999;
+  margin-bottom: 4rpx;
+  display: block;
+}
+
+.color-name {
+  font-size: 28rpx;
+  color: #333;
+  font-weight: 500;
+  margin-bottom: 8rpx;
+  display: block;
+}
+
+.color-price {
+  font-size: 24rpx;
+  color: #ff85a2;
+  margin-bottom: 8rpx;
+  display: block;
+}
+
+.color-desc {
+  font-size: 24rpx;
+  color: #666;
+  display: block;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 64rpx 32rpx;
+  color: #999;
+  font-size: 28rpx;
+} 

@@ -1,0 +1,69 @@
+<view class="container">
+  <view class="brand-section">
+    <scroll-view scroll-x class="brand-scroll" enable-flex>
+      <view 
+        class="brand-item {{currentBrand === brand.id ? 'active' : ''}}"
+        wx:for="{{brands}}"
+        wx:key="id"
+        wx:for-item="brand"
+        data-brand="{{brand.id}}"
+        bindtap="switchBrand"
+      >
+        <image class="brand-logo" src="{{brand.logo}}" mode="aspectFit"></image>
+        <text class="brand-name">{{brand.name}}</text>
+      </view>
+    </scroll-view>
+  </view>
+
+  <view class="filter-section">
+    <view class="search-bar">
+      <image class="search-icon" src="/images/search.svg" mode="aspectFit"></image>
+      <input 
+        class="search-input" 
+        placeholder="搜索色号或颜色名称" 
+        placeholder-class="search-placeholder"
+        bindinput="onSearch"
+        value="{{searchKey}}"
+      />
+    </view>
+    
+    <scroll-view class="category-scroll" scroll-x enable-flex>
+      <view class="category-list">
+        <view 
+          class="category-chip {{currentCategory === category ? 'active' : ''}}"
+          wx:for="{{categories}}"
+          wx:key="*this"
+          wx:for-item="category"
+          data-category="{{category}}"
+          bindtap="switchCategory"
+        >
+          {{category}}
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+
+  <view class="color-display">
+    <view class="waterfall">
+      <view 
+        class="color-card"
+        wx:for="{{colors}}"
+        wx:key="code"
+        data-color="{{item}}"
+        bindtap="selectColor"
+      >
+        <view class="color-preview" style="background-color: {{item.hex}}"></view>
+        <view class="color-info">
+          <text class="color-code">{{item.code}}</text>
+          <text class="color-name">{{item.name}}</text>
+          <text class="color-price">¥{{item.price}}</text>
+          <text class="color-desc">{{item.description}}</text>
+        </view>
+      </view>
+    </view>
+
+    <view class="empty-state" wx:if="{{colors.length === 0}}">
+      <text>没有找到相关色号，换个关键词试试吧~</text>
+    </view>
+  </view>
+</view> 

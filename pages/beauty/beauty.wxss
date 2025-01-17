@@ -1,0 +1,36 @@
+/* pages/beauty/beauty.wxss */
+.container {
+  padding: 32rpx;
+  background: #fff;
+  min-height: 100vh;
+}
+
+.back-button {
+  display: flex;
+  align-items: center;
+  padding: 16rpx;
+  background: #fff6f8;
+  border-radius: 16rpx;
+  width: fit-content;
+  margin-bottom: 32rpx;
+}
+
+.back-icon {
+  font-size: 36rpx;
+  color: #ff85a2;
+  margin-right: 8rpx;
+}
+
+.back-text {
+  font-size: 28rpx;
+  color: #ff85a2;
+}
+
+.title {
+  font-size: 36rpx;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  display: block;
+  margin-top: 32rpx;
+}

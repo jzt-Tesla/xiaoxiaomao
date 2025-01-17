@@ -1,0 +1,24 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/beauty/beauty",
+    "pages/lipstick/lipstick",
+    "pages/light-color/light-color",
+    "pages/light/light",
+    "pages/light-custom/light-custom",
+    "pages/preview/preview"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "美妆助手",
+    "navigationBarTextStyle": "black"
+  },
+  "usingComponents": {
+    "color-picker": "/components/color-picker/color-picker"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "navigationStyle": "custom",
+  "pageOrientation": "portrait"
+}

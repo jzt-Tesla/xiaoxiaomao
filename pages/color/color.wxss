@@ -1,0 +1,40 @@
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--fill-color);
+  transition: background-color 0.5s ease;
+  overflow: hidden;
+}
+
+.color-info {
+  opacity: 0;
+  transform: translateY(20rpx);
+  transition: all 0.5s ease;
+  transition-delay: 0.3s;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+}
+
+.color-code {
+  font-size: 72rpx;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 24rpx;
+  letter-spacing: 2rpx;
+}
+
+.color-name {
+  font-size: 36rpx;
+  display: block;
+  opacity: 0.9;
+}
+
+.animate .color-info {
+  opacity: 1;
+  transform: translateY(0);
+} 

@@ -1,0 +1,20 @@
+<!--pages/light/light.wxml-->
+<view class="container" style="background-color: {{color}}">
+  <view class="back-button" bindtap="onBack">
+    <text class="back-icon">←</text>
+  </view>
+
+  <view class="camera-container">
+    <camera device-position="front" flash="off" class="camera" binderror="error"></camera>
+    <view class="camera-tips" wx:if="{{!isLoading}}">
+      <text class="tips-text">轻触拍照</text>
+    </view>
+    <view class="loading" wx:if="{{isLoading}}">
+      <view class="loading-icon"></view>
+      <text class="loading-text">处理中...</text>
+    </view>
+  </view>
+  
+  <view class="photo-button" bindtap="takePhoto">
+  </view>
+</view>
