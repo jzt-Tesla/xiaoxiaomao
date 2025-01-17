@@ -3,5 +3,6 @@
   "projectname": "xiaoxiaomao",
   "setting": {
     "compileHotReLoad": true
-  }
+  },
+  "libVersion": "3.7.5"
 }
