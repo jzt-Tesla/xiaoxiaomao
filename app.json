@@ -10,8 +10,8 @@
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "美妆助手",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "",
     "navigationBarTextStyle": "black"
   },
   "usingComponents": {

@@ -1,8 +1,32 @@
 <!--pages/beauty/beauty.wxml-->
 <view class="container">
-  <view class="back-button" bindtap="onBack">
-    <text class="back-icon">←</text>
-    <text class="back-text">返回</text>
+  <!-- 顶部导航栏 -->
+  <view class="header">
+    <view class="back-button" bindtap="onBack">
+      <text class="back-icon">←</text>
+    </view>
+    <text class="title">化妆品查询</text>
+    <view class="clear-button" bindtap="onClear">清</view>
   </view>
-  <text class="title">美妆查询</text>
+
+  <!-- 品牌选择区域 -->
+  <view class="brand-section">
+    <image class="cosmetic-icon" src="/images/cosmetic-bottle.svg" mode="aspectFit"></image>
+    <text class="brand-text">选择品牌</text>
+  </view>
+
+  <!-- 输入框区域 -->
+  <view class="input-section">
+    <view class="input-box large">
+      <input type="text" placeholder="HERMES" bindinput="onFirstInput" value="{{firstInput}}"/>
+    </view>
+    <view class="input-box small">
+      <input type="text" placeholder="POU67HE30RETHW" bindinput="onSecondInput" value="{{secondInput}}"/>
+    </view>
+  </view>
+
+  <!-- 搜索按钮 -->
+  <view class="search-button" bindtap="onSearch">
+    <text>搜</text>
+  </view>
 </view>

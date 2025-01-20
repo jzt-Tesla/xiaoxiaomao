@@ -10,11 +10,6 @@ Page({
     })
   },
 
-  navigateToCustomLight() {
-    wx.navigateTo({
-      url: '/pages/light-custom/light-custom'
-    })
-  },
 
   navigateToBeauty() {
     wx.navigateTo({

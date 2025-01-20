@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    firstInput: '',
+    secondInput: ''
   },
 
   /**
@@ -66,5 +67,37 @@ Page({
 
   onBack() {
     wx.navigateBack()
+  },
+
+  onClear() {
+    this.setData({
+      firstInput: '',
+      secondInput: ''
+    });
+  },
+
+  onFirstInput(e) {
+    this.setData({
+      firstInput: e.detail.value
+    });
+  },
+
+  onSecondInput(e) {
+    this.setData({
+      secondInput: e.detail.value
+    });
+  },
+
+  onSearch() {
+    const { firstInput, secondInput } = this.data;
+    if (!firstInput || !secondInput) {
+      wx.showToast({
+        title: '请填写完整信息',
+        icon: 'none'
+      });
+      return;
+    }
+    // TODO: 实现搜索功能
+    console.log('搜索:', firstInput, secondInput);
   }
 })

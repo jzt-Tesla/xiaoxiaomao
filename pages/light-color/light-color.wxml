@@ -1,7 +1,7 @@
 <view class="container">
   <view class="light-grid">
     <view class="light-item warm" bindtap="selectLight" data-type="warm">
-      <text class="light-icon">🌞</text>
+      <text class="light-icon">☀</text>
       <text class="light-name">暖光</text>
     </view>
     
@@ -11,7 +11,7 @@
     </view>
     
     <view class="light-item natural" bindtap="selectLight" data-type="natural">
-      <text class="light-icon">🌟</text>
+      <text class="light-icon">⛅</text>
       <text class="light-name">自然光</text>
     </view>
     
@@ -21,8 +21,8 @@
     </view>
     
     <view class="light-item studio" bindtap="selectLight" data-type="studio">
-      <text class="light-icon">💡</text>
-      <text class="light-name">影棚光</text>
+      <text class="light-icon">🌈</text>
+      <text class="light-name">补光颜色卡</text>
     </view>
     
     <view class="light-item custom" bindtap="navigateToCustom">
