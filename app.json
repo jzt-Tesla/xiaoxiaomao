@@ -2,9 +2,11 @@
   "pages": [
     "pages/index/index",
     "pages/beauty/beauty",
+    "pages/result/result",
     "pages/lipstick/lipstick",
     "pages/light-color/light-color",
     "pages/light/light",
+    "pages/light-studio/light-studio",
     "pages/light-custom/light-custom",
     "pages/preview/preview"
   ],

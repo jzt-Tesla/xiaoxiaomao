@@ -1,0 +1,15 @@
+<!--pages/result/result.wxml-->
+<view class="container">
+  <!-- 顶部导航栏 -->
+  <view class="header">
+    <view class="back-button" bindtap="onBack">
+      <text class="back-icon">←</text>
+    </view>
+    <text class="title">查询结果</text>
+  </view>
+
+  <!-- 结果显示区域 -->
+  <view class="result-content">
+    <text>{{resultText}}</text>
+  </view>
+</view> 

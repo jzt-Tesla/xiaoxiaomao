@@ -90,7 +90,7 @@ page {
   font-size: 32rpx;
   font-weight: bold;
   border-radius: 44rpx;
-  text-align: center;
+  text-align: justify;
   box-shadow: 0 8rpx 16rpx rgba(255, 133, 162, 0.25);
   transition: all 0.3s ease;
 }
@@ -132,4 +132,25 @@ page {
 .action-button.save {
   background: #ff85a2;
   color: #fff;
+}
+
+/* 返回按钮样式 */
+.back-button {
+  position: fixed;
+  top: 40rpx;
+  left: 40rpx;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 40rpx;
+  background: rgba(255, 255, 255, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4rpx 16rpx rgba(0, 0, 0, 0.2);
+  z-index: 100;
+}
+
+.back-icon {
+  font-size: 48rpx;
+  color: #ff85a2;
 } 

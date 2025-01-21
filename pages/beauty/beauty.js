@@ -97,7 +97,10 @@ Page({
       });
       return;
     }
-    // TODO: 实现搜索功能
-    console.log('搜索:', firstInput, secondInput);
+
+    // 跳转到结果页面
+    wx.navigateTo({
+      url: `/pages/result/result?brand=${encodeURIComponent(firstInput)}&code=${encodeURIComponent(secondInput)}`
+    });
   }
 })

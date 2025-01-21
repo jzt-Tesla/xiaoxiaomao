@@ -1,0 +1,64 @@
+/* pages/result/result.wxss */
+.container {
+  padding: 20rpx;
+  background-color: #FFE4E1;
+  min-height: 100vh;
+}
+
+/* 顶部导航栏样式 */
+.header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20rpx 0;
+  width: 100%;
+  gap: 30rpx;
+}
+
+.back-button {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFE4E1;
+  box-shadow: 5rpx 5rpx 10rpx #FFB5B5,
+              -5rpx -5rpx 10rpx #FFF;
+  transition: all 0.3s ease;
+}
+
+.back-button:active {
+  box-shadow: inset 5rpx 5rpx 10rpx #FFB5B5,
+              inset -5rpx -5rpx 10rpx #FFF;
+}
+
+.back-icon {
+  font-size: 40rpx;
+  color: #FF9999;
+}
+
+.title {
+  font-size: 32rpx;
+  font-weight: 500;
+  color: #FF9999;
+}
+
+/* 结果显示区域样式 */
+.result-content {
+  margin: 30rpx 20rpx;
+  padding: 30rpx;
+  border-radius: 25rpx;
+  background: #FFE4E1;
+  box-shadow: inset 5rpx 5rpx 10rpx #FFB5B5,
+              inset -5rpx -5rpx 10rpx #FFF;
+  min-height: 300rpx;
+}
+
+.result-content text {
+  font-size: 28rpx;
+  color: #FF9999;
+  line-height: 1.6;
+  word-break: break-all;
+  white-space: pre-wrap;
+} 

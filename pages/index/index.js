@@ -10,7 +10,6 @@ Page({
     })
   },
 
-
   navigateToBeauty() {
     wx.navigateTo({
       url: '/pages/beauty/beauty'

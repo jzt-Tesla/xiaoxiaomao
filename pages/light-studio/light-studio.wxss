@@ -1,1 +1,87 @@
 /* pages/light-studio/light-studio.wxss */
+
+/* 容器样式：设置全屏显示并防止溢出 */
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* 颜色显示区域：全屏背景，添加颜色和透明度过渡动画 */
+.color-block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+/* 控制面板：底部弹出式面板，带圆角和半透明背景 */
+.control-panel {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 32rpx 32rpx 0 0;
+  padding: 40rpx 30rpx;
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+}
+
+/* 控制面板显示状态：滑入动画 */
+.control-panel.show {
+  transform: translateY(0);
+}
+
+/* 控制面板隐藏状态：滑出动画 */
+.control-panel.hide {
+  transform: translateY(100%);
+}
+
+/* 区域标题文本样式 */
+.section-title {
+  font-size: 28rpx;
+  color: #333;
+  margin-bottom: 20rpx;
+  display: block;
+}
+
+/* 颜色选择器区域样式 */
+.color-picker-section {
+  margin-bottom: 40rpx;
+}
+
+/* 亮度调节区域样式 */
+.brightness-section {
+  padding: 0 20rpx;
+}
+
+/* 亮度滑块样式 */
+.brightness-slider {
+  width: 100%;
+}
+
+/* 返回按钮：圆形按钮带阴影效果 */
+.back-button {
+  position: absolute;
+  top: 40rpx;
+  left: 40rpx;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 40rpx;
+  background: rgba(255, 255, 255, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4rpx 16rpx rgba(0, 0, 0, 0.2);
+  z-index: 100;
+}
+
+/* 返回按钮图标样式 */
+.back-icon {
+  font-size: 48rpx;
+  color: #ff85a2;
+}

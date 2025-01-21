@@ -5,7 +5,7 @@ Page({
       cold: '#E8F5FF',    // 冷光颜色
       natural: '#FFFFFF',  // 自然光颜色
       sunset: '#FFD4B5',  // 日落光颜色
-      studio: '#F8F8F8'   // 影棚光颜色
+    //   studio: '#F8F8F8'   // 影棚光颜色
     }
   },
 
@@ -16,7 +16,11 @@ Page({
       url: `/pages/light/light?color=${color}`
     })
   },
-
+  navigateToStudio() {
+    wx.navigateTo({
+      url: '/pages/light-studio/light-studio'
+    })
+  },
   navigateToCustom() {
     wx.navigateTo({
       url: '/pages/light-custom/light-custom'

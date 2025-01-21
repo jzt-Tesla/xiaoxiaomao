@@ -1,6 +1,11 @@
 <!-- 自定义补光拍照页面 -->
 <!-- 页面主容器：背景色为当前选中的补光颜色 -->
 <view class="container" style="background: {{backgroundColor}};">
+  <!-- 返回按钮 -->
+  <view class="back-button" bindtap="onBack">
+    <text class="back-icon">←</text>
+  </view>
+
   <view class="header">
     <text class="title">自定义补光颜色</text>
   </view>

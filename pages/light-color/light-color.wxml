@@ -20,7 +20,7 @@
       <text class="light-name">日落光</text>
     </view>
     
-    <view class="light-item studio" bindtap="selectLight" data-type="studio">
+    <view class="light-item studio" bindtap="navigateToStudio" >
       <text class="light-icon">🌈</text>
       <text class="light-name">补光颜色卡</text>
     </view>

@@ -1,3 +1,7 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "color-picker": "/components/color-picker/color-picker"
+  },
+  "navigationStyle": "custom",
+  "disableScroll": true
 }
